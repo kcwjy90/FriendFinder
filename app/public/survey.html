@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FF SURVEY</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <!-- making ajax call possible-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- making .post possible -->
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+
+</head>
+
+<body>
+    <!-- New User enters name and image -->
+    <div class="container nameImg">
+        <h1>About You:</h1>
+        <form>
+            <hr>
+            <div class="form-group">
+                <label for="userName">Your Name (Required)</label>
+                <input type="text" class="form-control" id="userName" placeholder="First Namd and Last Name">
+            </div>
+            <div class="form-group">
+                <label for="imageLink">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="imageLink" placeholder="Link To Your Image">
+            </div>
+            <br>
+            <hr>
+        </form>
+    </div>
+
+    <!-- Survey -->
+    <div class="container">
+        <hr>
+
+        <br>
+        <!-- Question 1 -->
+        <h4>
+            <strong>Question 1: </strong>I identify myself to be an outgoing and adventurous individual</h4>
+        <select class="userchoice" id="ques1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+
+        <!-- Question 2 -->
+        <h4>
+            <strong>Question 2: </strong>I like traveling with a big group of people.</h4>
+        <select class="userchoice" id="ques2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Question 3 -->
+        <h4>
+            <strong>Question 3: </strong>I enjoy trying new things</h4>
+        <select class="userchoice" id="ques3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Question 4 -->
+        <h4>
+            <strong>Question 4: </strong>I enjoy going to big events and parties</h4>
+        <select class="userchoice" id="ques4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Question 5 -->
+        <h4>
+            <strong>Question 5: </strong>I have hard time relating to other people’s feelings.</h4>
+        <select class="userchoice" id="ques5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Question 6 -->
+        <h4>
+            <strong>Question 6: </strong>I don't have problem socializing with people I just met</h4>
+        <select class="userchoice" id="ques6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Question 7 -->
+        <h4>
+            <strong>Question 7: </strong>I don't get upset at how other people treat me or think about me</h4>
+        <select class="userchoice" id="ques7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Question 8 -->
+        <h4>
+            <strong>Question 8: </strong>If I could, I never want to be alone</h4>
+        <select class="userchoice" id="ques8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Question 9 -->
+        <h4>
+            <strong>Question 9: </strong>I always want to be the center of attention</h4>
+        <select class="userchoice" id="ques9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Question 10 -->
+        <h4>
+            <strong>Question 10: </strong>I feel like I can be friends with anyone</h4>
+        <select class="userchoice" id="ques10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal" data-target="#exampleModal">Submit</button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Friend</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="selectedFriendHere">
+                    <!-- names and images go here -->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+
+
+
+        $("#submit").on("click", function () {
+               // emptying newFrined
+               var newFriend ={};
+             newFriend = {
+                name: $("#userName").val().trim(),
+                photoLink: $("#imageLink").val(),
+                Q1: parseInt($("#ques1").val()),
+                Q2: parseInt($("#ques2").val()),
+                Q3: parseInt($("#ques3").val()),
+                Q4: parseInt($("#ques4").val()),
+                Q5: parseInt($("#ques5").val()),
+                Q6: parseInt($("#ques6").val()),
+                Q7: parseInt($("#ques7").val()),
+                Q8: parseInt($("#ques8").val()),
+                Q9: parseInt($("#ques9").val()),
+                Q10: parseInt($("#ques10").val()),
+                tot: parseInt($("#ques1").val()) + parseInt($("#ques2").val()) + parseInt($("#ques3").val()) + parseInt($("#ques4").val()) + parseInt($("#ques5").val()) + parseInt($("#ques6").val()) + parseInt($("#ques7").val()) + parseInt($("#ques8").val()) + parseInt($("#ques9").val()) + parseInt($("#ques10").val())
+
+            }
+
+
+            compareFriend();
+            //function to compare each object in friendsArray with a newly created friend
+            function compareFriend() {
+                //initializing variables
+                yesFriend = false;
+                selectedFriendArr = [];
+                $("#selectedFriendHere").html("");
+
+                // calling friendsArray in form of req using $.get method
+                $.get("api/friends", function (req, res) {
+
+                    // console.log(req);
+                    console.log(req[4].tot);
+                    // console.log(Math.abs(req[3].tot-req[2].tot));
+                    console.log(newFriend.tot);
+                    // console.log(req.length);
+
+                    for (var i = 0; i < req.length; i++) {
+                        //pushing name and the picture of well-matching person into a variable selectedFriend.
+                        //compare the sum. If the sum is <= 5, get the image and name of that specific one and display.
+                        if ((Math.abs(req[i].tot - newFriend.tot)) <= 3) {
+                            selectedFriendArr.push({ "name": req[i].name, "photoLink": req[i].photoLink });
+                            console.log("you have a friend");
+                            console.log(selectedFriendArr);
+                            yesFriend = true;
+
+                        } else {
+                            console.log("NEXT~");
+                        }
+                    };
+
+                    //when there is no matching friend after running thru for loop
+                    if (yesFriend === false) {
+                        console.log("you don't have a friend");
+                        $("#selectedFriendHere").append("<h2> Don't be too sad. You are quite a unique one. No match at the moment but let’s wait until more people sign up :) </h2>");
+
+                    } else {
+                        for (var x = 0; x < selectedFriendArr.length; x++) {
+                            // acutally displaying the name and picture of the matching frined on html
+                            console.log("posted")
+                            $("#selectedFriendHere").append("<h1> We found your Friend! It's " + selectedFriendArr[x].name + "</h1> <br> <img src='" + selectedFriendArr[x].photoLink + "' alt='" + selectedFriendArr[x].name + "face'>");
+
+                        }
+                    }
+                });
+
+
+
+            };
+
+            $.post("/api/friends", newFriend, function (data) {
+
+                $("#userName").val(""),
+                    $("#imageLink").val(""),
+                    $("#ques1").val(""),
+                    $("#ques2").val(""),
+                    $("#ques3").val(""),
+                    $("#ques4").val(""),
+                    $("#ques5").val(""),
+                    $("#ques6").val(""),
+                    $("#ques7").val(""),
+                    $("#ques8").val(""),
+                    $("#ques9").val(""),
+                    $("#ques10").val("")
+
+
+            });
+
+          
+         
+
+        })//end
+
+    </script>
+
+
+
+
+</body>
+
+</html>
