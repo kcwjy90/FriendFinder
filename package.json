@@ -1,4 +1,20 @@
 {
+
+  "name": "friendfinder", 
+
+  "version": "1.0.0", 
+
+  "description": "Helps you find a frinend", 
+
+  "main": "server.js", 
+
+
+  "scripts": { 
+
+    "start": "node server.js" 
+
+  },
+
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
