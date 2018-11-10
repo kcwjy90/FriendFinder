@@ -1,5 +1,5 @@
 //Dependencies. Required for Server.js
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 var express = require("express");
 var path = require("path"); //built in node itself. 
 
